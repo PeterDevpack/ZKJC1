@@ -1,6 +1,0 @@
-insert into organarchives (ORGANNUM, ORGANNAME, ZHANGHQZ, RESPONSIBILITYPERSON, PHONE, POSTALCODE, ADDRESS, SYNCIP, SYNCPORT, REMARK, N_PARENTNUM, N_PAYMENTNUM, WDFLAG, SHENGHJGH, TONGDGZ, GUANLJG, ZHISZH)
-values ('HFYY', '汇丰银行', null, null, null, null, null, null, null, null, null, null, '1', 'HFYY', '是', null, null);
-
-insert into clerktable (CLERKNUM, CLERKNAME, CLERKPWD, POSTNUM, POSTNAME, N_UPDATEDATE, N_ORGANNUM, N_ERROR, N_LOGDATE, N_IP, N_CREATOR, SHENGHJGH, WDFLAG, CLERKSTATUS)
-values ('000000', '超级管理员', '11111111a5aaaaaa', null, null, '2018-12-18', '99999', 0, '2018-12-18', null, null, 'HFYY', '1', '1');
-
