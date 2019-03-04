@@ -1,0 +1,18 @@
+insert into organarchives (ORGANNUM, ORGANNAME, ZHANGHQZ, RESPONSIBILITYPERSON, PHONE, POSTALCODE, ADDRESS, SYNCIP, SYNCPORT, REMARK, N_PARENTNUM, N_PAYMENTNUM, WDFLAG, SHENGHJGH, TONGDGZ, GUANLJG, ZHISZH)
+values ('HFYY', '汇丰银行', null, null, null, null, null, null, null, null, null, null, '1', 'HFYY', '是', null, null);
+
+insert into clerktable (CLERKNUM, CLERKNAME, CLERKPWD, POSTNUM, POSTNAME, N_UPDATEDATE, N_ORGANNUM, N_ERROR, N_LOGDATE, N_IP, N_CREATOR, SHENGHJGH, WDFLAG, CLERKSTATUS)
+values ('000000', '超级管理员', '11111111a5aaaaaa', null, null, '2018-12-18', 'HFYY', 0, '2018-12-18', null, null, 'HFYY', '1', '1');
+
+--mq参数
+insert  into MQCONFIGURE values('133.10.221.122',8209,'ULCVS01CN.SVRCHL.TM','ULCVS01CN','T.CVS.CN_CVS.CN_HUB.CVS_RQST','T.CVS.CN_HUB.CN_CVS.CVS_RESP',819,null,null);
+
+
+insert into yq_jiaoyzd values('port','integer',6);
+insert into yq_jiaoyzd values('mqlchannel','string',50);
+insert into yq_jiaoyzd values('queuemanager','string',50);
+insert into yq_jiaoyzd values('requestqeue','string',50);
+insert into yq_jiaoyzd values('replyqueue','string',50);
+insert into yq_jiaoyzd values('characterset','integer',5 );
+insert into yq_jiaoyzd values('username','string',50);
+insert into yq_jiaoyzd values('userpassword','string',50);
