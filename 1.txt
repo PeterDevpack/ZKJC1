@@ -1,0 +1,2 @@
+insert into yq_jiaoynr (JIAOYID, JIAOYLX, JIAOYZT, JIAOYNR, JIAOYBZ, JIAOYZH)
+values ('GetQuanJlsh', 'simpleQuery', 1, 'select ''QG013''||to_char(sysdate,''yyyymmdd'')||lpad(to_char(YY_GUIMLS_SEQ.nextval),10,''0'') guimqjls  from dual', '生成全局流水号', null);
