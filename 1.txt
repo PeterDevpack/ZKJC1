@@ -8,12 +8,12 @@ CREATE SEQUENCE YY_GUIMLS_SEQ INCREMENT BY 1 START WITH 1 MAXVALUE 9999999999 MI
 
 
 insert into yq_jiaoynr (JIAOYID, JIAOYLX, JIAOYZT, JIAOYNR, JIAOYBZ, JIAOYZH)
-values ('addBillCheckLog', 'simpleQuery', 1, 'insert into  BillCheckLog   values(:taskid , :pich , :account , :zhangh , :groupmember , :branchname , :ccode , :limit , :checktype , :billresultmodel , :billresult , :remark , :clerknum , :clerkname , :clerkorgnum , :checkdate , :checktime)', '添加整票验印日志', null);
+values ('addBillCheckLog', 'simpleQuery', 1, 'insert into  billchecklog   values(:taskid , :pich , :account , :zhangh , :groupmember , :branchname , :ccode , :limit , :checktype , :billresultmodel , :billresult , :remark , :clerknum , :clerkname , :clerkorgnum , :checkdate , :checktime)', '添加整票验印日志', null);
 
 
 
 insert into yq_jiaoynr (JIAOYID, JIAOYLX, JIAOYZT, JIAOYNR, JIAOYBZ, JIAOYZH)
-values ('addSealCheckLog', 'simpleQuery', 1, 'insert into  SealCheckLog   values(:taskid , :chopsequence , :imagekey , :chopindicator , :chopname , :result , :resultmodel)', '添加单张验印日志', null);
+values ('addSealCheckLog', 'simpleQuery', 1, 'insert into  sealchecklog   values(:taskid , :chopsequence , :imagekey , :chopindicator , :chopname , :result , :resultmodel)', '添加单张验印日志', null);
 
 
 
@@ -23,7 +23,7 @@ values('SaveCheckedResults' , 'complexQuery' , '1' , 'addBillCheckLog,addSealChe
 
 
 --整票
-insert into  BillCheckLog   values(:taskid , :pich , :account , :zhangh , :groupmember , :branchname , :ccode , :limit , :checktype , :billresultmodel , :billresult , :remark , :clerknum , :clerkname , :clerkorgnum , :checkdate , :checktime)
+insert into  billchecklog   values(:taskid , :pich , :account , :zhangh , :groupmember , :branchname , :ccode , :limit , :checktype , :billresultmodel , :billresult , :remark , :clerknum , :clerkname , :clerkorgnum , :checkdate , :checktime)
 
 --单张
-insert into  SealCheckLog   values(:taskid , :chopsequence , :imagekey , :chopindicator , :chopname , :result , :resultmodel)
+insert into  sealchecklog   values(:taskid , :chopsequence , :imagekey , :chopindicator , :chopname , :result , :resultmodel)
