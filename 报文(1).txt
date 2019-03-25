@@ -1,0 +1,1 @@
+{"funcid":"JInitializeOcx","traderequest":[{"objectname":"VERSIONINFO","objectdata":[{"key":"ocx_version","value":"3.1.0.3"},{"key":"sxkz_version","value":"1.4"},{"key":"kzcs_version","value":"1.5"},{"key":"dic_version","value":"3.3"}]}]}
