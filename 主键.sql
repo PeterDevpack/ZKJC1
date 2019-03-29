@@ -5,3 +5,7 @@ alter table TASKZHUB add constraint PK_TASKZHUB primary key(INSTANCEID);
  alter table TASKJGZIB add constraint PK_TASKJGZIB primary key(instanceid,recordsequence); 
  
  create index idx_BillCheckLog  on BillCheckLog(groupmember,checkdate); 
+ 
+ 
+ 
+ update tisxx set MSGCONTENT = '账号或密码错误!' where MSGID = 'YYA-pwdError';
