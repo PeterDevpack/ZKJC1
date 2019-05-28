@@ -1,0 +1,5 @@
+update YQ_JIAOYZD set  zidcd = 14 where zidm = 'limit';
+alter table TASKJGZIB modify limit varchar2(14);
+alter table TASKJGFB modify limit varchar2(14);
+alter table TASKZIB modify limit varchar2(14);
+alter table TASKZHUB modify limit varchar2(14);
